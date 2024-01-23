@@ -7,13 +7,13 @@ const cpf = campo.value.replace(/\.|-/g, "")
     if(validarNumerosRepetidos(cpf) ||
      validarPrimeiroDigito(cpf) ||
      validarSegundoDigito(cpf)){
-     console.log("esse cpf nao existe")
+    /* console.log("esse cpf nao existe")
      } else {
         console.log("cpf existe")
-     }
-
-
-}
+    */
+        campo.setCustomValidity('Esse CPF não é válido')
+     }  
+    }
 
 function validarNumerosRepetidos(cpf){
     const numerosRepetidos = [
