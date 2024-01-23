@@ -19,8 +19,6 @@ formulario.addEventListener("submit", (e) => {
     window.location.href = "./abrir-conta-form-2.html"
 })
 
-
-
 //console.log(camposDoFormulario)
 camposDoFormulario.forEach((campo) => {
     campo.addEventListener("blur", () => verificaCampo(campo))
